@@ -42,7 +42,7 @@ h1 span {
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--black-color);
+    color: var(--primary-color);
 }
 
 h3 {
@@ -168,7 +168,17 @@ header {
 .about {
     background-color: var(--white-color);
     block-size: 70vh;
+    display: flex;
 }
+
+.about .header-wrapper {
+    justify-content: space-around;
+}
+
+.about-content {
+    inline-size: 55%;
+}
+
 /* About section end */
 
 
@@ -191,5 +201,8 @@ header {
 }
 
 .btn-set {
+    border: 2px lime dotted;
+}
+.about-content {
     border: 2px lime dotted;
 }
