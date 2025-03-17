@@ -5,6 +5,8 @@
 /* Basic reset */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Local variables */
@@ -23,11 +25,14 @@
 
 /* Local styles start */
 /* Font style start */
-h1 {
+h1, h2, h3 {
     font-family: var(--headings);
+    line-height: 1.26;
+}
+
+h1 {
     font-size: 4rem;
     font-weight: 800;
-    line-height: 1.26;
     color: var(--black-color);
 }
 h1 span {
@@ -35,18 +40,14 @@ h1 span {
 }
 
 h2 {
-    font-family: var(--headings);
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 1.26;
     color: var(--black-color);
 }
 
 h3 {
-    font-family: var(--headings);
     font-size: 1.5rem;
     font-weight: 600;
-    line-height: 1.26;
     color: var(--secondary-color);
 }
 
@@ -61,6 +62,7 @@ p {
 
 /* Button style start */
 .primary-btn, .secondary-btn {
+    cursor: pointer;
     font-family: var(--paragraph);
     font-size: 1rem;
     font-weight: 700;
@@ -85,3 +87,72 @@ p {
     transform: scale(1.1);
 }
 /* Button style end */
+
+/* Default wrappers style start*/
+.header-wrapper, .wrapper {
+    max-inline-size: 1440px;
+    inline-size: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+/* Default wrappers style end*/
+
+/* Header style start */
+header {
+    block-size: 12vh;
+    inline-size: 100vw;
+    background-color: var(--neutral-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: var(--primary-color);
+}
+
+.primary-nav {
+    display: flex;
+    gap: 2.15rem;
+    align-items: center;
+}
+
+.primary-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.15rem;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-nav button {
+    margin: 0;
+}
+
+.primary-nav a {
+    text-decoration: none;
+    font-family: var(--paragraph);
+    font-weight: 700;
+    color: var(--primary-color);
+}
+/* Header style end */
+
+
+
+
+
+
+
+
+
+/* Temp border fo visual */
+.header-wrapper {
+    border: 2px red dotted;
+}
+.wrapper {
+    border: 2px rgb(121, 0, 0) dotted;
+}
