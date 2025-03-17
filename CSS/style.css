@@ -57,6 +57,7 @@ p {
     font-weight: 400;
     line-height: 1.26;
     color: var(--black-color);
+    margin-block: 1.5rem;
 }
 /* Font style end */
 
@@ -94,11 +95,16 @@ p {
     inline-size: 100%;
     margin: 0 auto;
     align-items: center;
+    display: flex;
 }
 
 .header-wrapper {
-    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    justify-content: center;
 }
 /* Default wrappers style end*/
 
@@ -141,6 +147,30 @@ header {
 }
 /* Header style end */
 
+/* Hero header style start */
+.hero-header {
+    block-size: 65vh;
+    background-color: var(--neutral-color);
+    display: flex;
+    text-align: center;
+}
+
+.hero-header-container {
+    inline-size: 48%;
+}
+
+.btn-set {
+    margin-block: 2rem;
+}
+/* Hero header style end */
+
+/* About section start */
+.about {
+    background-color: var(--white-color);
+    block-size: 70vh;
+}
+/* About section end */
+
 
 
 
@@ -155,4 +185,11 @@ header {
 }
 .wrapper {
     border: 2px rgb(121, 0, 0) dotted;
+}
+.hero-header, .about {
+    border: 2px teal dotted;
+}
+
+.btn-set {
+    border: 2px lime dotted;
 }
