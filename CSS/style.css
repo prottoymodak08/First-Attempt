@@ -170,7 +170,7 @@ header {
 /* About section start */
 .about {
     background-color: var(--white-color);
-    block-size: 70vh;
+    block-size: 80vh;
     display: flex;
 }
 
@@ -179,8 +179,8 @@ header {
 }
 
 .pp {
-    inline-size: 35%;
-    block-size: 90%;
+    inline-size: 30%;
+    block-size: 70%;
     object-fit: cover;
     object-position: center;
 }
@@ -276,6 +276,8 @@ header {
     inline-size: 5rem;
 }
 /* Tools section end */
+
+/* Services section start */
 .services {
     block-size: 60vh;
     background-color: var(--white-color);
@@ -305,33 +307,19 @@ header {
     color: var(--primary-color);
     font-weight: 700;
 }
+/* Service section end */
 
-
-
-
-/* Temp border fo visual */
-.header-wrapper {
-    border: 2px red dotted;
-}
-.wrapper {
-    border: 2px rgb(121, 0, 0) dotted;
-}
-.hero-header, .about {
-    border: 2px teal dotted;
+/* Footer section start */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 12vh;
+    background-color: var(--primary-color);
+    margin-block: auto;
 }
 
-.btn-set {
-    border: 2px lime dotted;
+footer h3 {
+    color: var(--white-color);
 }
-.about-content {
-    border: 2px lime dotted;
-}
-.left-side {
-    border: 2px red dotted;
-}
-.right-side {
-    border: 2px aquamarine dotted;
-}
-.skill-bar {
-    border: 2px red dotted;
-}
+/* Footer section end */
