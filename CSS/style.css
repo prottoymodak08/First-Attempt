@@ -1,0 +1,87 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+/* Local variables */
+:root {
+    /* Color Pallate */
+    --primary-color: #0A3981;
+    --secondary-color: #E38E49;
+    --neutral-color: #E7EBF2;
+    --white-color: #FEFDFD;
+    --black-color: #030B0D;
+
+    /* Fonts */
+    --headings: 'Poppins', sans-serif;
+    --paragraph: 'Lora', serif;
+}
+
+/* Local styles start */
+/* Font style start */
+h1 {
+    font-family: var(--headings);
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.26;
+    color: var(--black-color);
+}
+h1 span {
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: var(--headings);
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.26;
+    color: var(--black-color);
+}
+
+h3 {
+    font-family: var(--headings);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.26;
+    color: var(--secondary-color);
+}
+
+p {
+    font-family: var(--paragraph);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.26;
+    color: var(--black-color);
+}
+/* Font style end */
+
+/* Button style start */
+.primary-btn, .secondary-btn {
+    font-family: var(--paragraph);
+    font-size: 1rem;
+    font-weight: 700;
+    border: solid 2px var(--primary-color);
+    border-radius: 2.5rem;
+    padding: 1.25rem 3.125rem;
+    transition: all 0.25s;
+    margin-inline: 1rem;
+}
+
+.primary-btn {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.secondary-btn {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    transform: scale(1.1);
+}
+/* Button style end */
