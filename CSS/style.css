@@ -254,9 +254,9 @@ header {
 }
 /* Skills section end */
 
-/* Tools section here */
+/* Tools section start */
 .tools {
-    block-size: 20vh;
+    block-size: 25vh;
     text-align: center;
     background-color: var(--neutral-color);
 }
@@ -275,10 +275,36 @@ header {
 .tool-icons img {
     inline-size: 5rem;
 }
+/* Tools section end */
+.services {
+    block-size: 60vh;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
 
+.service-content {
+    text-align: center;
+}
 
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+}
 
+.cards {
+    text-align: start;
+    margin-block: 4rem;
+    border: solid 5px var(--primary-color);
+    border-radius: 5px;
+    padding: 35px 30px;
+}
 
+.cards h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
 
 
 
