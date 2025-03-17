@@ -50,6 +50,9 @@ h3 {
     font-weight: 600;
     color: var(--secondary-color);
 }
+.blue-header {
+    color: var(--primary-color);
+}
 
 p {
     font-family: var(--paragraph);
@@ -175,11 +178,82 @@ header {
     justify-content: space-around;
 }
 
-.about-content {
-    inline-size: 55%;
+.pp {
+    inline-size: 35%;
+    block-size: 90%;
+    object-fit: cover;
+    object-position: center;
 }
 
+.about-content {
+    inline-size: 55%;
+    padding-inline: 1rem;
+}
+
+.about-content button {
+    margin: 0;
+}
 /* About section end */
+
+/* Skills section start */
+.skills {
+    block-size: 40vh;
+    background-color: var(--neutral-color);
+    display: flex;
+}
+
+/* Left side */
+.left-side {
+    inline-size: 40%;
+    margin-inline: auto;
+    
+}
+
+.left-side button{
+    margin: 0;
+}
+
+/* Right side */
+.right-side{
+    inline-size: 50%;
+    margin-inline: auto;
+}
+
+.skill-bar {
+    margin-block-end: 1.56rem;
+}
+
+.skill-bar:last-child {
+    margin: 0;
+}
+
+.skill-bar label {
+    font-family: var(--paragraph);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+}
+
+.skill-bar progress {
+    -webkit-appearance: none;
+    appearance: none;
+    inline-size: 100%;
+    margin-block-start: 0.6rem;
+    display: inline-block;
+}
+
+.skill-bar progress::-webkit-progress-bar {
+    border-radius: 0.6rem;
+    background-color: var(--white-color);
+}
+
+.skill-bar progress::-webkit-progress-value {
+    border-radius: 0.6rem;
+    background-color: var(--secondary-color);
+}
+/* Skills section end */
+
 
 
 
@@ -205,4 +279,13 @@ header {
 }
 .about-content {
     border: 2px lime dotted;
+}
+.left-side {
+    border: 2px red dotted;
+}
+.right-side {
+    border: 2px aquamarine dotted;
+}
+.skill-bar {
+    border: 2px red dotted;
 }
