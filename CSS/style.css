@@ -148,6 +148,9 @@ header {
     font-weight: 700;
     color: var(--primary-color);
 }
+.primary-nav a:hover {
+    color: var(--secondary-color);
+}
 /* Header style end */
 
 /* Hero header style start */
