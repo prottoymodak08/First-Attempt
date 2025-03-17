@@ -254,7 +254,27 @@ header {
 }
 /* Skills section end */
 
+/* Tools section here */
+.tools {
+    block-size: 20vh;
+    text-align: center;
+    background-color: var(--neutral-color);
+}
 
+.tools h2 {
+    margin-block-end: 2.18rem;
+    padding: auto;
+}
+
+.tool-icons {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 25px;
+}
+
+.tool-icons img {
+    inline-size: 5rem;
+}
 
 
 
